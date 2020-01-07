@@ -1,0 +1,252 @@
+body {
+  font-family: "Montserrat";
+}
+
+#title{
+  background-color: black;
+  color: #fff;
+    height: 100vh;
+ 
+  background-image:url("/uploads/img5.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'EB Garamond', serif;
+}
+/* 1. Navbar */
+nav.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
+}
+
+a.navbar-brand {
+    font-family: 'EB Garamond', serif;
+    color: #186976 !important;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 999;
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #186976;
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    margin: 0 25px 0 5px;
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+    color: grey;
+}
+
+.navbar-nav {
+/*    margin-right: auto !important;*/
+    margin-left: auto !important;
+}
+
+
+/* ----Text animation start--  */
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+ 
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+#text-animation {
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ text-align: center;
+ justify-content: center;
+align-items: center;
+height:100vh;
+    
+}
+
+#name{
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 6em;
+  
+    
+}
+
+@media (max-width: 1028px) {
+  #text-animation {
+    text-align: center;
+  }
+}
+
+
+/* 3. About me */
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title span {
+    margin-left: 10px;
+    height: 5px;
+    width: 30px;
+    display: inline-block;
+   
+}
+
+.section-subtitle {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+   text-align: center;
+}
+
+/*About Me section! start*/
+section#about-me .description {
+    margin: 40px 0;
+    text-align: start;
+}
+
+section#about-me .description p {
+    letter-spacing: 1px;
+    color: #707070;
+}
+
+section#about-me .skill-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#about-me .list{
+     display: flex;
+}
+
+a.btn-main {
+    text-decoration: none;
+    background: #5c5c5c;
+    padding: 15px 25px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) and (min-width: 320px) {
+    .navbar-light {
+        background: #fff;
+    }
+
+    .fixed-top .navbar-brand {
+        color: var(--primary-color) !important;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: #444;
+        margin: 0;
+        padding: 0 0 15px 2px;
+        text-align: center;
+    }
+
+    .social-media-nav {
+        padding: 10px 0;
+        padding-left: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navbar-light .social-media-nav li {
+        padding: 0 15px;
+    }
+
+    .navbar-light .social-media-nav li i {
+        color: #444;
+    }
+    #text-animation .letters{
+        font-size: 40px;
+    }
+    .section-title {
+        padding-top: 30px;
+    }
+}
+
+/* Testimonial section */
+#testimonials {
+  text-align: center;
+  background-color: #186976;
+  color: #ffff;
+}
+.testimonial-image {
+  width: 50%;
+    height: 80%; 
+  border-radius: 5%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.5;
+    
+}
+
+
+/*footer start*/
+#footer {
+   
+      padding: 70px 0;
+    text-align: center;
+  background-color: white;
+  color: #ffff;
+}
+
+.social-media-nav {
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.social-media-nav li {
+    display: inline-block;
+    padding-left: 25px;
+    font-size: 30px;
+}
