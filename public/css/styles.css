@@ -1,36 +1,54 @@
 body {
-  font-family: "Montserrat";
+/*    font-family: "Montserrat";*/
+}
+#hero{
+    height: 100%;
 }
 
-#title{
-  background-color: black;
-  color: #fff;
-    height: 100vh;
- 
-  background-image:url("/uploads/img5.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-
-}
-#title .container-fluid {
-  padding: 3% 15% 7%;
+#title {
+    color: #fff;
+/*    height: 100vh;*/
+    background-image: url("/uploads/img7.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'EB Garamond', serif;
+ .container-fluid {
+    padding: 3% 10% 3%;
+    background-color: rgba(0, 0, 0, 0.45);
+
+    
 }
+
+section#title .img-yersin{
+height: 20%;
+    width: auto;
+/*    border-radius: 40%;*/
+    opacity: 0.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'EB Ga sramond', serif;
+}
+
 /* 1. Navbar */
+
 nav.navbar {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     justify-content: space-between;
 }
 
 a.navbar-brand {
     font-family: 'EB Garamond', serif;
-    color: #186976 !important;
+    color: white;
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
@@ -39,7 +57,7 @@ a.navbar-brand {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: #186976;
+    color: white;
     font-family: 'EB Garamond', serif;
     font-weight: 600;
     font-size: 15px;
@@ -56,68 +74,73 @@ a.navbar-brand {
 }
 
 .navbar-nav {
-/*    margin-right: auto !important;*/
+    /*    margin-right: auto !important;*/
     margin-left: auto !important;
 }
 
 
 /* ----Text animation start--  */
 .ml10 {
-  position: relative;
-  font-weight: 900;
-  font-size: 3.5em;
+    position: relative;
+    font-weight: 900;
+    font-size: 2.5em;
+    letter-spacing: 1px;
 }
 
 .ml10 .text-wrapper {
-  position: relative;
-  display: inline-block;
- 
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
 }
 
 .ml10 .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
 }
 
 #text-animation {
- display: flex;
- flex-direction: column;
- justify-items: center;
- text-align: center;
- justify-content: center;
-align-items: center;
-height:100vh;
-    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
-#name{
+#name {
+    letter-spacing: 3px;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
-    font-size: 6em;
-  
+    font-size: 3em;
     
+
+
 }
 
 @media (max-width: 1028px) {
-  #text-animation {
-    text-align: center;
-  }
+    #text-animation {
+        text-align: center;
+    }
 }
 
 
 /* 3. About me */
+/*
 .section-padding {
     padding: 100px 0;
 }
+*/
 
 .section-title {
     font-family: 'EB Garamond', serif;
     font-weight: 700;
-    color: #444;
+    color: white;
     text-transform: uppercase;
     text-align: center;
 }
@@ -127,35 +150,90 @@ height:100vh;
     height: 5px;
     width: 30px;
     display: inline-block;
-   
+
 }
 
 .section-subtitle {
-    color: #999;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
-   text-align: center;
+    text-align: center;
 }
+
+.about-buttons {
+    justify-content: center;
+    display: flex;
+    padding: 5%;
+    align-content: center;
+
+
+}
+
 
 /*About Me section! start*/
-section#about-me .description {
+section#about-me-box {
+    background-color: white;
+    padding: 1%;
+    height: 100vh;
+}
+
+section#about-me .row{
+    padding-top: 3%;
+    margin: 0;
+}
+
+section#about-me-box .row .img-about{
+   position: relative;
+   display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section#about-me-box .about-container{
+    justify-content: start;
+    
+}
+
+section#about-me-box .about-content {
+    padding: 7%;
+    
+}
+
+#content-box{
+    align-self: center;
+}
+
+section#about-me-box .description {
     margin: 40px 0;
-    text-align: start;
+    text-align: center;
+    
 }
 
-section#about-me .description p {
-    letter-spacing: 1px;
-    color: #707070;
+p {
+/*    letter-spacing: 1px;*/
+    color: white;
+font-family: 'EB Garamond', serif;
+font-size: 1.2em;
+   text-align:justify;
+     
 }
 
-section#about-me .skill-title {
+section#about-me-box .skill-title {
     display: flex;
     justify-content: space-between;
 }
 
-section#about-me .list{
-     display: flex;
+section#about-me-box .row .list {
+  padding-top: 5%;
+   padding: 0;
+    display: inline;
+    justify-content: space-between;
+}
+
+.span-item{
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
 }
 
 a.btn-main {
@@ -179,10 +257,10 @@ a.btn-main {
     }
 
     .navbar-nav .nav-item .nav-link {
-        color: #444;
-        margin: 0;
+        color: white;
+/*        margin: 0;*/
         padding: 0 0 15px 2px;
-        text-align: center;
+/*        text-align: center;*/
     }
 
     .social-media-nav {
@@ -199,8 +277,13 @@ a.btn-main {
     .navbar-light .social-media-nav li i {
         color: #444;
     }
-    #text-animation .letters{
-        font-size: 40px;
+
+    #text-animation .letters {
+        font-size: 2rem;
+    }
+    
+    .container-fluid{
+        padding: 5%;
     }
     .section-title {
         padding-top: 30px;
@@ -208,36 +291,48 @@ a.btn-main {
 }
 
 /* Testimonial section */
-#testimonials {
-  text-align: center;
-  background-color: #186976;
-  color: #ffff;
-}
-.testimonial-image {
-  width: 50%;
-    height: 80%; 
-  border-radius: 5%;
-  margin: 20px;
-}
-
-.carousel-item {
-  padding: 7% 15%;
+#projects {
+    text-align: center;
+    background-color: rgb(45, 137, 231);
+    color: #ffff;
+/*    height: 100vh;*/
+/*    background-image: url("/uploads/img6.jpg");*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.testimonial-text {
-  font-size: 1rem;
-  line-height: 1.5;
-    
+.project-main-title {
+    padding-top: 3%
 }
 
+#carousel-item {
+    display: inline;
+}
+
+
+.webpage {
+    width: 30%;
+    height: 50%;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+.project-title {}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
 /*footer start*/
 #footer {
-   
-      padding: 70px 0;
+
+/*    padding: 70px 0;*/
     text-align: center;
-  background-color: white;
-  color: #ffff;
+/*    background-color: white;*/
+/*    color: #ffff;*/
 }
 
 .social-media-nav {
@@ -247,6 +342,113 @@ a.btn-main {
 
 .social-media-nav li {
     display: inline-block;
-    padding-left: 25px;
+    padding: 10px;
     font-size: 30px;
+}
+
+section#footer .footer-box{
+    padding: 0;
+    padding-bottom: 3%;
+}
+
+
+/*
+
+.portfolio-item{
+    display: flex;
+   position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#project-img{
+    position: relative;
+   
+    width: 30%;
+height: auto;
+}
+
+.portfolio-hover-content{
+     position: absolute;
+    z-index: 10;
+    
+}
+*/
+
+
+
+
+#projects{
+    height: 100vh;
+     background-image: url("/uploads/img7.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#projects-box{
+    height: 100vh;
+}
+.project-box{
+display: flex;    
+}
+
+.project-half{
+    display: flex;
+}
+
+
+/* Make the image to responsive */
+.project-img {
+  width: 100%;
+  height: auto;
+    padding-bottom: 5%;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+#projects .portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+#projects .project-half{
+    padding-bottom: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+#projects .icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+#projects .fa-user:hover {
+  color: #eee;
+}    
+
+#projects .project-description{
+    font-size: 1rem;
 }
