@@ -8,7 +8,7 @@ body {
 #title {
     color: #fff;
 /*    height: 100vh;*/
-    background-image: url("/uploads/img7.jpg");
+    background-image: url("https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?cs=srgb&dl=architecture-buildings-business-city-374870.jpg&fm=jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -131,11 +131,9 @@ a.navbar-brand {
 
 
 /* 3. About me */
-/*
 .section-padding {
     padding: 100px 0;
 }
-*/
 
 .section-title {
     font-family: 'EB Garamond', serif;
@@ -352,44 +350,40 @@ section#footer .footer-box{
 }
 
 
-/*
 
 .portfolio-item{
-    display: flex;
-   position: relative;
-    justify-content: center;
-    align-content: center;
-}
-
-
-#project-img{
-    position: relative;
+    padding:5%;
+/*     position:absolute;*/
    
-    width: 30%;
-height: auto;
 }
-
-.portfolio-hover-content{
-     position: absolute;
-    z-index: 10;
+/*#project-img{*/
+/*    position: relative;*/
+   
+/*    width: 30%;*/
+/*height: auto;*/
+/*}*/
+/*.portfolio-hover-content{*/
+/*     position: absolute;*/
+/*    z-index: 10;*/
     
-}
-*/
+/*}*/
 
 
 
 
 #projects{
-    height: 100vh;
-     background-image: url("/uploads/img7.jpg");
+    height: auto;
+     background-image: url("https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?cs=srgb&dl=architecture-buildings-business-city-374870.jpg&fm=jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+   
 }
 
 #projects-box{
-    height: 100vh;
+    padding: 0 15;
+    height: auto;
 }
 .project-box{
 display: flex;    
@@ -397,12 +391,13 @@ display: flex;
 
 .project-half{
     display: flex;
+    justify-content: space-between;
 }
 
 
 /* Make the image to responsive */
 .project-img {
-  width: 100%;
+  width: 80%;
   height: auto;
     padding-bottom: 5%;
 }
@@ -418,36 +413,46 @@ display: flex;
   width: 100%;
   opacity: 0;
   transition: .3s ease;
-  background-color: red;
+  background-color: #0E497D;
+
 }
 
 /* When you mouse over the container, fade in the overlay icon*/
 #projects .portfolio-item:hover .overlay {
-  opacity: 1;
+  opacity: 0.5;
+    transform: scale(0.9);
 }
 
-#projects .project-half{
-    padding-bottom: 0;
-    padding-left: 1%;
-    padding-right: 1%;
+#projects .portfolio-item:hover{
+    z-index: 2;
+    transform: scale(1);
 }
+
+
 
 /* The icon inside the overlay is positioned in the middle vertically and horizontally */
 #projects .icon {
   color: white;
   font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    padding: 20%;
+
+   
 }
 
+#projects .i {
+   
+}
+
+
 /* When you move the mouse over the icon, change color */
-#projects .fa-user:hover {
-  color: #eee;
+#projects .link:hover {
+ 
+
 }    
+
+#projects .link{
+    display:none;
+}
 
 #projects .project-description{
     font-size: 1rem;

@@ -46,6 +46,11 @@ app.post("/projects", function(req, res){
    res.render("projects"); 
 });
 
+app.get("/contact", function(req, res){
+    res.render("contact");
+});
+
+
 
 
 let port = process.env.PORT;
